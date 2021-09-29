@@ -1,0 +1,58 @@
+
+<script>
+    let nav = document.getElementById('navLinks') ; 
+    let navbar = document.getElementById('navbar') ; 
+    let home = document.getElementById('home-page') ; 
+    let wholeWebsite = document.getElementById('whole') ; 
+    let warning = document.getElementById('warning') ; 
+    let barIcon = document.getElementById('bar-icon') ; 
+
+    window.onload = () => {
+        if (window.innerWidth > 700) {
+            console.log("this is not valid") ;
+            wholeWebsite.style.display = "none" ; 
+            warning.style.display = "flex" ;
+        }
+    }
+
+
+
+    let expand = false ; 
+
+    function showNavLinks() {
+        if (expand) {
+            nav.style.display = "none" ; 
+            nav.style.opacity = "0" ;
+            barIcon.style.backgroundImage = "url('/images/bar.png')"; 
+            barIcon.style.height = "26px" ; 
+            barIcon.style.width = "26px" ; 
+            expand = false ;
+        }else {
+            nav.style.display = "flex" ;
+            nav.style.opacity = "1" ;
+            barIcon.style.backgroundImage = "url('/images/close.png')" ; 
+            barIcon.style.height = "23px" ; 
+            barIcon.style.width = "23px" ; 
+            expand = true ; 
+        }
+    }
+
+    console.log("it's there") ; 
+
+
+    function deleteHome() {
+        home.style.display = "none" ; 
+    }
+
+    console.log(window.pageXOffset) ;
+    let formArea = document.getElementById('form-area');
+
+    
+    let page = document.getElementById('home-page') ;
+
+
+    function opened() {
+        page.style.display = "none" ; 
+        formArea.style.display = "block" ;
+    }
+</script>

@@ -1,0 +1,95 @@
+<%- include('header.ejs') %>
+
+
+<section class="home-page" id = "home-page">
+    <img src="images/last.png" alt="" class= "home-image">
+    <button class="down-btn" onclick= "deleteHome">Explore</button>
+</section>
+
+
+<section class = "timer">
+    <div class="countdown">
+        <div class="days" >
+            
+            <div class="countdown-number" id = "day-change"></div>
+            <div class="countdown-title">Days</div>
+        </div>
+        <div class="hours" >
+            
+            <div class="countdown-number" id = "hour-change"></div>
+            <div class="countdown-title">Hours</div>
+
+        </div>
+        <div class="mins" >
+            
+            <div class="countdown-number" id = "min-change"></div>
+            <div class="countdown-title">Mins</div>
+
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="box">
+        <div class="box-title">Music Blast</div>
+        <img src="images/music.png" alt="" class = "box-image-two">
+        <div class="box-para">The party will have all the new bollywood as well as western song to beat on. We will hire a professional DJ for Music to make it the perfect Night</div>
+        
+    </div>
+    <div class="box">
+        <div class="box-title">Bill Transperancy</div>
+        <img src="images/money.png" class = "box-image-one" >
+        <div class="box-para">We provide transparency. Your money is being handled securely and wisely. Bill will be shown after party.</div>
+    </div>
+    <div class="box">
+        <div class="box-title">Online Registration</div>
+        <img src="images/register.png" class = "box-image" alt="">
+        <div class="box-para">Peers can register Online in this website by clicking on the register button and replying the necessary question asked.</div>
+        
+    </div>
+</section>
+
+<div class="mark-container">
+    <marquee direction = "left" scrollamount = "16">
+        <div class="test">
+            <div class="card">Music</div>
+            <div class="card">Dance </div>
+            <div class="card">Food</div>
+            <div class="card">Desert</div>
+        </div>
+    </marquee>
+</div>
+</section>
+
+<script>
+    var countDownDate = new Date("Dec 15, 2021 15:00:00").getTime();
+
+    var x = setInterval(function() {
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+    let dayChange = document.getElementById('day-change') ; 
+    let hourChange = document.getElementById('hour-change') ; 
+    let minChange = document.getElementById('min-change') ; 
+
+    dayChange.textContent = days ; 
+    hourChange.textContent = hours ; 
+    minChange.textContent = minutes ; 
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<%- include('footer.ejs') %>

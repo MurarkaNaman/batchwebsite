@@ -1,0 +1,121 @@
+* {
+    padding : 0 ; 
+    margin : 0 ; 
+    box-sizing: border-box;
+}
+
+
+.home-page-3 {
+    height : 86vh ; 
+    width : 100% ; 
+    background-image: url('/images/unnamed.png');
+    background-position: center;
+    background-size : 170%;
+    border-radius : 0 0 20px 20px ; 
+    padding : 18% 2%;  
+    display : flex ; 
+    font-family: 'Roboto' , sans-serif;
+    align-items: flex-end;
+    justify-content: center ;
+}
+
+.home-page-container {
+    height : 100vh ; 
+    width : 100% ; 
+    padding : 0 ; 
+    margin : 0 ;
+}
+
+.home-page-3 h1 {
+    color : white ;     
+    font-size: 36px ;
+    letter-spacing: 3px;
+}
+
+.people {
+    height: max-content;
+    width : 100% ; 
+    padding : 4% ; 
+}
+
+
+.person {
+    height : 12vh ; 
+    width : 100% ; 
+    background-color : white  ; 
+    border-radius : 12px ;
+    overflow : hidden; 
+    margin-bottom : 5% ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.person-name , .person-position {
+    margin-left : 12% ; 
+    padding-bottom: 3% ;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.person-name {
+    padding-top : 4% ;  
+    letter-spacing: 2px ;
+    font-size : 20px ; 
+    font-weight: 600 ;
+    font-family: 'Roboto' , sans-serif;
+}
+.person-position {
+    font-size : 18px ; 
+    font-weight: 500;
+}
+
+.person::before {
+    content : '' ; 
+    height : 12vh ; 
+    width : 4% ; 
+    position: absolute ;
+    border-radius : 12px 0 0 12px  ; 
+}
+
+
+.person:nth-child(1)::before {
+    background-color: #ffdf6d;
+}
+
+.person:nth-child(2)::before {
+    
+    background-color: #fc816a;
+}
+
+.person:nth-child(3)::before {
+   
+    background-color: #38dfbc;
+}
+
+.person:nth-child(4)::before {
+    background-color: #455d94;
+}
+
+
+.person-name {
+    color : #ffdf6d ; 
+}
+
+span {
+    color : #fc816a ; 
+}
+
+.span-second {
+    color : #38dfbc ; 
+}
+
+.span-third {
+    color : #455d94 ; 
+}
+
+.fake-nav {
+    position: fixed ;
+    height: 8vh ;
+    width : 100% ;
+    background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(16px);
+}
+

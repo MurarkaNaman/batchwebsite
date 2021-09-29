@@ -1,0 +1,173 @@
+* {
+    padding : 0 ; 
+    margin : 0 ; 
+    box-sizing : border-box; 
+}
+
+.home-page-2 {
+    height: 100vh ;
+}
+
+.trial-nav {
+    height: 8vh ;
+    width : 100% ; 
+    background-color : rgba(255 , 255 , 255 , 0.6);
+    backdrop-filter: blur(16px );
+    position: fixed;
+    border-radius : 0 0 20px 20px ;
+}
+
+.register-home{
+    height: 86vh ; 
+    width: 100% ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px ;
+    background-image: url('/images/register-home-image.png');
+    background-size : cover;
+    color : white ;
+    padding : 16% 6% ; 
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 33px ;
+    background-position: center;
+
+}
+
+.form-area {
+    height: 100vh ;
+    width: 100% ;
+    display: none;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.formSection {
+    height: 100vh;
+    width: 100% ;
+    padding : 6% 6% ; 
+    display : flex ; 
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.submit {
+    height: 10vh ;
+    background-color: #5023af;
+}
+
+.inside {
+    height : 72vh ; 
+    width : 100% ; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding : 6% 8% ; 
+    border-radius: 20px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.first {
+    border : 4px solid #5023af ; 
+    padding : 3% 6% ; 
+    font-family: 'Roboto' , sans-serif;
+    font-size : 18px ; 
+    font-weight: 500;
+    border-radius : 14px ;
+    color : #5023af ;  
+    margin-bottom : 3% ;
+    transform: scale(1);
+    transition : transform 0.3s ease-in-out ;
+}
+
+.first:focus {
+    outline : none ;
+    transform: scale(1.02);
+
+}
+
+.inside:nth-child(1) {
+    justify-content: center;
+}
+
+.option-box {
+    width : 100% ; 
+    background-color: #5023af ;
+    margin : 3% ; 
+    border-radius: 14px ;
+    display: inline-block;
+    padding : 6% 8% ; 
+}
+
+.option-box h2 {
+    font-size: 20px ;
+    font-family: 'Roboto' , sans-serif;
+    display : inline-block ; 
+    margin-left : 3% ; 
+    color : white ;
+    font-weight: 500;
+}
+
+
+.box-heading {
+    padding : 2% ; 
+    font-family: 'Roboto' , sans-serif;
+    font-size : 26px ; 
+    color : #5023af ; 
+    margin-bottom: 16% ;
+}
+
+#suggestion-box {
+    height: 24vh ;
+    width : 100% ; 
+    border : 3px solid #5023af;
+    border-radius : 14px ; 
+    outline : none ; 
+    color : #5023af ; 
+    text-align: start;
+    font-size : 20px ; 
+    font-weight: 550 ;
+    font-family: 'Roboto' , sans-serif;
+}
+
+#suggestion-box:focus {
+    outline : none ; 
+}
+
+.box-btn-area {
+    height: 14vh ;
+    width : 100% ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-btn , .submit-btn{
+    padding : 3% 20% ;
+    outline  : none ; 
+    border : 3.4px solid #5023af ; 
+    border-radius : 16px ;
+    background-color: white ;
+    font-size : 20px ; 
+    color : #5023af ; 
+    font-weight: 600 ;
+}
+.submit-btn {
+    color : white ; 
+    background-color: #5023af;
+    border: 3.4px solid white ;
+}
+.submit-btn a {
+    text-decoration: none;
+    color : white ;
+}
+
+.submit {
+    height : 10vh ; 
+    width : 100% ; 
+    background-color: #5023af;
+}
