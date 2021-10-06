@@ -171,3 +171,33 @@
     width : 100% ; 
     background-color: #5023af;
 }
+
+.venue-section {
+    margin-top: 10vh ;
+    font-family: 'Roboto' , sans-serif;
+    color : white ; 
+    height: 600px ;
+    width : 100% ; 
+}
+
+.venue-box {
+    height : 100% ; 
+    width : 100% ; 
+    padding-top : 12% ; 
+    text-align: center; 
+    letter-spacing: 2px;
+    background-color : #7283db ; 
+    border-radius : 18px 18px 0 0 ; 
+    font-size : 22px ; 
+    background-image: url("/images/sonnet.png");
+    background-size : 130%;
+    background-position : center;
+    text-decoration: none;
+    color: white ; 
+    outline: none;
+}
+
+.venue-section a {
+    text-decoration : none;
+} 
+

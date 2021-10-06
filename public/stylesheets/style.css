@@ -314,3 +314,16 @@
   margin-top : 6% ; 
   font-size: 42px;
 }
+
+.credit-section {
+  height : 6vh ; 
+  width : 100% ; 
+  background-color: #5023af;
+  color : white ; 
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  font-size : 14px ; 
+  font-weight: normal;
+  z-index: -100;
+}

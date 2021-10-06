@@ -1,3 +1,7 @@
+<div class="credit-section">
+    <h4>Created by the Admins of Untamed Night</h4>
+</div>
+
 
 <script>
     let nav = document.getElementById('navLinks') ; 
@@ -7,14 +11,12 @@
     let warning = document.getElementById('warning') ; 
     let barIcon = document.getElementById('bar-icon') ; 
 
-    window.onload = () => {
-        if (window.innerWidth > 700) {
-            console.log("this is not valid") ;
-            wholeWebsite.style.display = "none" ; 
-            warning.style.display = "flex" ;
-        }
+    
+    if (window.innerWidth > 700) {
+        console.log("this is not valid") ;
+        wholeWebsite.style.display = "none" ; 
+        warning.style.display = "flex" ;
     }
-
 
 
     let expand = false ; 
